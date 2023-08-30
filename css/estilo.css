@@ -6,26 +6,32 @@
 
 .titulosH {
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 2rem;
+}
+ .navbar-brand{ font-size: 120%; 
+    color: white;
 }
 
-main ul li {
-    display: inline;
+.botonNav {
+    font-size: 120%; 
+    color: white;}
+
+.botonNav:hover { 
+    color: white;
+    border: red 2px solid;
+    background-color: brown;
+    font-size: 130% ;
+    margin: 5px;
+    padding: 7px;
+
 }
 
-main ul li{
-background-color: gainsboro;
-border: black 1px solid;
-margin: 5px;
-padding: 3px;
-}
+header {background-color: black;}
 
-.subrayado{
-    text-decoration: none;
-    color: black;
-}
 
 /*INDEX.HTML*/
+
+
 .barraNavegadora{
 list-style-type: none;
 text-transform: uppercase;
@@ -52,32 +58,17 @@ text-transform: uppercase;
 }
 
 /* PLANTEL PROFESIONAL */
-.plantel {
-    list-style-type: none;
-       }
+ .card {
+    margin: 1rem;
+    text-align: center;
+    font-weight: bold;
+ }
+ .card{box-shadow: 3px 3px 3px 3px gray;}
 
-.cajaJugador {
-margin: 20px 30px 20px 20px;
-
-}
-
-.posiciones {
-    font-size: 25px;
-    font-weight: lighter;
-}
-
-.fotojugadores {
-    width: 100px;
-    height: 140px;
-}
-
-.usoDisplay{
-    display: inline;
-}
 /* NOTICIAS */
-.lanziniFoto {
-    width: 250px;
-    height: 300px;
+.imgLanzini{
+    width: 350px;
+    height: 400px;
 }
 
 .fotoMonumental {
