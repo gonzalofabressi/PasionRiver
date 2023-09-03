@@ -35,35 +35,54 @@
             </div>
         </nav>
     </header>
-
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/madrid.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/hinchadaportada.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/110años.jpg" class="d-block w-100" alt="banda con escudo de river">
+            </div>
+            <div class="carousel-item">
+                <img src="img/hinchadaportada.png" class="d-block w-100" alt="foto de una tribuna repleta de hinchas">
+            </div>
+            <div class="carousel-item">
+                <img src="img/madrid.png" class="d-block w-100" alt="campeones en madrid">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
-
+    </div>
+    <div class="jumbotron">
+        <div class="container-fluid fondoImagen">
+            <h1 class="display-3 text-center">CLUB ATLETICO RIVER PLATE</h1>
+            <p class="text-center">Vivir y jugar con Grandeza</p>
+        </div>
+    </div>
 
 
 
     <main>
+
+
+
+
         <div>
-            <p>
+            <h2 class="text-center titulosH">Historia</h2>
+            <p class="container-fluid">
                 El Club Atlético River Plate es una entidad polideportiva de Argentina. Fue fundado el 25 de mayo de
                 1901 en
                 el barrio de La Boca, tras la fusión de los clubes Santa Rosa y La Rosales, y su nombre proviene de la
@@ -123,7 +142,7 @@
                 culturales. Está presente en todos los niveles educativos con un instituto, un terciario y una
                 universidad.
             </p>
-            <img src="img/clubriver.jpg" alt="Club Atletico River Plate" class="fotoclubriver">
+            <img src="img/clubriver.jpg" alt="Club Atletico River Plate" class="fotoclubriver img-fluid">
         </div>
     </main>
 

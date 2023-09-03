@@ -31,10 +31,8 @@ header {background-color: black;}
 
 /*INDEX.HTML*/
 
-
-.barraNavegadora{
-list-style-type: none;
-text-transform: uppercase;
+.fondoImagen{
+    background-image: url(../img/franja2.jpg);
 }
 
 .fotoclubriver {
@@ -75,3 +73,25 @@ text-transform: uppercase;
     width: 700px;
     height: 400px;
 }
+
+/* ESTADIO */
+
+.museoRiver{
+    background-color: brown;
+    color: white;
+}
+
+ .bottonCompra {
+    background-color: brown;
+    color: white; 
+    border: red 1px solid
+ }
+
+ .bottonCompra:hover {
+    background-color: red;
+
+ }
+
+ .formulario{
+    margin: 1rem;
+ }
