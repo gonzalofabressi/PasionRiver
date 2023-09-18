@@ -1,0 +1,39 @@
+* {
+    line-height: 20px;
+    font-family: Roboto;
+}
+
+header {
+    background-color: $colorPrincipal;
+
+    .escudoLogo {
+        width: 75px;
+        ;
+        height: 75px;
+    }
+
+    .navbar-brand {
+        font-size: 120%;
+        color: $colorTerciario;
+
+        .botonNav {
+            font-size: 120%;
+            color: $colorTerciario;
+
+            &:hover {
+                color: $colorTerciario;
+                border: $colorSecundario 2px solid;
+                background-color: $otroColor;
+                font-size: 130%;
+                margin: 5px;
+                padding: 7px;
+            }
+
+        }
+    }
+}
+
+.titulosH {
+    font-weight: bolder;
+    font-size: 2rem;
+}

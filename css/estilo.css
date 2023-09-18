@@ -1,13 +1,16 @@
+
 *{ 
     line-height: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
 
+
 .titulosH {
     font-weight: bolder;
     font-size: 2rem;
 }
+
  .navbar-brand{ font-size: 120%; 
     color: white;
 }
@@ -25,6 +28,7 @@
     padding: 7px;
 
 }
+
 
 header {background-color: black;}
 
@@ -44,16 +48,13 @@ header {background-color: black;}
     height: 75px;
    }
 
-   .piePagina { 
-    list-style-type: none;
-   }
 
-/* titulos barra navegadora*/
-.titulos{
+/* titulos barra navegadora
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: red;
-}
+} 
+*/
 
 /* PLANTEL PROFESIONAL */
  .card {

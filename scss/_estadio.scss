@@ -1,0 +1,20 @@
+.parrafo {
+   @include texto(1em, 2em, black, 10px)
+}
+
+.museoRiver{
+    background-color: $otroColor;
+    color: $colorTerciario;
+}
+
+ .bottonCompra {
+    background-color: $otroColor;
+    color: $colorTerciario; 
+    border: $colorSecundario 1px solid;
+    &:hover{background-color: $colorSecundario;
+    }
+ }
+
+ .formulario{
+    margin: 1rem;
+ }

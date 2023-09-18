@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
+/* variables colores*/
+/*tipografia*/
+/* textos*/
+/*mixins*/
+* {
+  line-height: 20px;
+  font-family: Roboto;
+}
+
+header {
+  background-color: rgb(24, 22, 22);
+}
+header .escudoLogo {
+  width: 75px;
+  height: 75px;
+}
+header .navbar-brand {
+  font-size: 120%;
+  color: white;
+}
+header .navbar-brand .botonNav {
+  font-size: 120%;
+  color: white;
+}
+header .navbar-brand .botonNav:hover {
+  color: white;
+  border: rgb(236, 7, 7) 2px solid;
+  background-color: rgb(167, 8, 8);
+  font-size: 130%;
+  margin: 5px;
+  padding: 7px;
+}
+
+.titulosH {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.fondoImagen {
+  background-image: url(../img/franja2.jpg);
+}
+
+.fotoclubriver {
+  width: 700 px;
+  height: 300px;
+}
+
+.card {
+  margin: 1rem;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 3px 3px 3px 3px gray;
+}
+
+.cuadro {
+  margin: 25px;
+}
+
+.imgLanzini {
+  width: 350px;
+  height: 400px;
+}
+
+.fotoMonumental {
+  width: 700px;
+  height: 400px;
+}
+
+.parrafo {
+  font-family: Roboto;
+  font-size: 1em;
+  line-height: 2em;
+  color: black;
+  padding: 10px;
+}
+
+.museoRiver {
+  background-color: rgb(167, 8, 8);
+  color: white;
+}
+
+.bottonCompra {
+  background-color: rgb(167, 8, 8);
+  color: white;
+  border: rgb(236, 7, 7) 1px solid;
+}
+.bottonCompra:hover {
+  background-color: rgb(236, 7, 7);
+}
+
+.formulario {
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+/* variables colores*/
+$colorPrincipal: rgb(24, 22, 22);
+$colorSecundario: rgb(236, 7, 7); 
+$colorTerciario: white;
+$otroColor: rgb(167, 8, 8);
+
+/*tipografia*/
+$mainfonts: Roboto;
+
+/* textos*/
+$textLigth:100;
+$textoRegular:400;
+$textBold:900;
+
+/*mixins*/
+ @mixin texto ($size, $line, $color,$padding){
+    font-family: $mainfonts;
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    padding: $padding;
+ }
