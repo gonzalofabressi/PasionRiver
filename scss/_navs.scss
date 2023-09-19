@@ -1,6 +1,6 @@
 * {
     line-height: 20px;
-    font-family: Roboto;
+    font-family: $mainfonts;
 }
 
 header {
@@ -15,25 +15,37 @@ header {
     .navbar-brand {
         font-size: 120%;
         color: $colorTerciario;
-
-        .botonNav {
-            font-size: 120%;
-            color: $colorTerciario;
-
-            &:hover {
-                color: $colorTerciario;
-                border: $colorSecundario 2px solid;
-                background-color: $otroColor;
-                font-size: 130%;
-                margin: 5px;
-                padding: 7px;
-            }
-
-        }
     }
+
+    .botonNav {
+        font-size: 120%;
+        color: $colorTerciario;
+
+        &:hover {
+            color: $colorTerciario;
+            border: $colorSecundario 2px solid;
+            background-color: $otroColor;
+            font-size: 130%;
+            margin: 5px;
+            padding: 7px;
+        }
+
+    }
+
 }
 
 .titulosH {
-    font-weight: bolder;
+    color: $colorSecundario;
+    font-weight: bold;
     font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1 rem;
 }
+
+
+.img404 {
+    width: 100%;
+    height: auto;
+  
+  }

@@ -1,0 +1,20 @@
+.cajasTienda {
+    background-color: rgb(227, 233, 231);
+}
+
+.botonCompra {
+    color: black;
+    background-image: linear-gradient(to right, $colorTerciario, $colorSecundario);
+    border: $otroColor;
+   background-size: 150% 100%;
+   transition: background-position 0,5;
+   &:hover{ background-position: 75% 0%;}
+   
+}
+
+.botonCompra {
+    animation-name: animacionUno;
+     animation-duration: 3s;
+    animation-iteration-count: 1;
+
+}
