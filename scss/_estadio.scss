@@ -2,6 +2,11 @@
    @include texto(1em, 2em, black, 10px)
 }
 
+@media (max-width: 767px) {
+   .videoRiver {
+       width: 100%; /* Hace que el video ocupe el 100% del ancho en dispositivos móviles */
+       height: auto; }  } 
+
 .museoRiver{
     background-color: $otroColor;
     color: $colorTerciario;

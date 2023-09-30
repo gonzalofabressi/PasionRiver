@@ -1,20 +1,34 @@
 .cajasTienda {
     background-color: rgb(227, 233, 231);
+        height: 400px; 
+        display: flex;
+        flex-direction: column;
+        position: relative;  }
+
+.botonCompra {
+    padding: 10px 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .botonCompra {
     color: black;
     background-image: linear-gradient(to right, $colorTerciario, $colorSecundario);
     border: $otroColor;
-   background-size: 150% 100%;
-   transition: background-position 0,5;
-   &:hover{ background-position: 75% 0%;}
-   
+    background-size: 150% 100%;
+    transition: background-position 1s;
+
+    &:hover {
+        background-position: 75% 0%;
+    }
 }
 
 .botonCompra {
     animation-name: animacionUno;
-     animation-duration: 3s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
 
 }
