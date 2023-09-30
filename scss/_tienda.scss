@@ -1,9 +1,43 @@
+
+.descuentoCartel {
+    background-color: $otroColor;
+    color: $colorTerciario;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/*animacion*/
+@keyframes quince {
+    from {
+        transform: translateX(-65%);
+    }
+
+    to {
+        transform: translateX(65%);
+    }
+}
+
+.animacionCartel {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: quince infinite 15s linear;
+}
+
+
+
 .cajasTienda {
     background-color: rgb(227, 233, 231);
-        height: 400px; 
-        display: flex;
-        flex-direction: column;
-        position: relative;  }
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
 .botonCompra {
     padding: 10px 20px;
@@ -24,11 +58,4 @@
     &:hover {
         background-position: 75% 0%;
     }
-}
-
-.botonCompra {
-    animation-name: animacionUno;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-
 }

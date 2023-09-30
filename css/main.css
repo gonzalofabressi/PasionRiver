@@ -1,21 +1,8 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
 /* variables colores*/
 /*tipografia*/
 /* textos*/
 /*mixins*/
-/*animaciones*/
-@keyframes animacionUno {
-  0% {
-    background-color: white;
-  }
-  50% {
-    background-color: pink;
-  }
-  100% {
-    background-color: rgb(236, 7, 7);
-  }
-}
 * {
   line-height: 20px;
   font-family: Roboto;
@@ -56,9 +43,49 @@ header .botonNav:hover {
   margin-bottom: 1 rem;
 }
 
+/*Error 404*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.contenedor {
+  position: relative;
+  height: 100vh;
+}
+
 .img404 {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textoError {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  color: rgb(167, 8, 8);
+}
+
+.error404 {
+  font-size: 1.5em;
+  color: rgb(236, 7, 7);
+  text-decoration: none;
+  border: 2px solid rgb(167, 8, 8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.error404:hover {
+  background-color: rgb(167, 8, 8);
+  color: rgb(24, 22, 22);
 }
 
 .fondoImagen {
@@ -71,12 +98,35 @@ header .botonNav:hover {
   padding-right: 3%;
 }
 
+.imagenFlotante, .imagenFlotante2 {
+  float: left;
+  margin: 20px;
+  max-width: 500px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .imagenFlotante, .imagenFlotante2 {
+    width: 100%;
+    height: auto;
+  }
+}
+.imagenFlotante2 {
+  float: right;
+}
+
 .fotoclubriver {
+  display: block;
+  margin: 0 auto;
   width: 700 px;
   height: 300px;
 }
 
-@media (min-width: 1010px) {
+.contenedorPrincipal {
+  overflow-x: hidden;
+}
+
+@media (min-width: 1025px) {
   .contenedorJugadores {
     display: flex;
     flex-wrap: wrap;
@@ -101,6 +151,33 @@ header .botonNav:hover {
 
 .cuadro {
   margin: 25px;
+}
+
+.descuentoCartel {
+  background-color: rgb(167, 8, 8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/*animacion*/
+@keyframes quince {
+  from {
+    transform: translateX(-65%);
+  }
+  to {
+    transform: translateX(65%);
+  }
+}
+.animacionCartel {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: quince infinite 15s linear;
 }
 
 .cajasTienda {
@@ -131,10 +208,8 @@ header .botonNav:hover {
   background-position: 75% 0%;
 }
 
-.botonCompra {
-  animation-name: animacionUno;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
+.titulosNoticias {
+  font-family: Roboto;
 }
 
 .imgLanzini {
@@ -157,7 +232,7 @@ header .botonNav:hover {
 
 @media (max-width: 767px) {
   .videoRiver {
-    width: 100%; /* Hace que el video ocupe el 100% del ancho en dispositivos móviles */
+    width: 100%;
     height: auto;
   }
 }

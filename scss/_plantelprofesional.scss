@@ -1,4 +1,7 @@
-@media (min-width:1010px){ 
+
+.contenedorPrincipal {overflow-x: hidden;} 
+
+@media (min-width:1025px){ 
 .contenedorJugadores {
     display: flex;
     flex-wrap: wrap;
