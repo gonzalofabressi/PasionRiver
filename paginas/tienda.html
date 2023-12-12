@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tienda de Ropa deportiva y urbana del Club Atletico River Plate">
-    <meta name="keywords" content="Tienda, remera, titular, banda, pantalon, short , river plate, botines, zapatillas de river, medias de futbol">
+    <meta name="keywords"
+        content="Tienda, remera, titular, banda, pantalon, short , river plate, botines, zapatillas de river, medias de futbol">
     <title>Tienda River</title>
     <link rel="shortcut icon" href="../img/escudo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
+
+    <script src="../js/main.js" defer></script>
 </head>
 
 <body class="contenedorPrincipal">
@@ -42,85 +45,161 @@
         <div class="descuentoCartel ">
             <p class="animacionCartel">¡Obtén un 20% de descuento siendo socio de River!</p>
         </div>
-        <h1 class=" titulosH">Tienda River Plate</h1>
-        <div class="row contenedorCajasTienda justify-content-center flex-wrap">
-            <div class="card cajasTienda" style="width: 18rem;">
-                <img src="../img/camisetatitular.png" class="card-img-top" alt="camiseta titular de River Plate">
-                <div class="card-body cardTienda">
-                    <h5 class="card-title">Camiseta Titular 23/24</h5>
-                    <a href="../error404.html" class="btn btn-primary botonCompra ">Comprar</a>
-                </div>
-            </div>
-            <div class="card cajasTienda " style="width: 18rem;">
-                <img src="../img/camisetasuplente.png" class="card-img-top" alt="camiseta suplente de River Plate">
-                <div class="card-body cardTienda">
-                    <h5 class="card-title">Camiseta Suplente 23/24</h5>
-                    <a href="../error404.html" class="btn btn-primary botonCompra ">Comprar</a>
-                </div>
-            </div>
-            <div class="card cajasTienda" style="width: 18rem;">
-                <img src="../img/shortblanco.png" class="card-img-top" alt="Short futbol color blanco de River Plate">
-                <div class="card-body">
-                    <h5 class="card-title">Short de futbol blanco</h5>
-                    <a href="../error404.html" class="btn btn-primary botonCompra ">Comprar</a>
-                </div>
-            </div>
-            <div class="card cajasTienda" style="width: 18rem;">
-                <img src="../img/shortnegro.png" class="card-img-top" alt="Short fubtol color negro de River Plate">
-                <div class="card-body">
-                    <h5 class="card-title">Short de futbol negro</h5>
-                    <a href="../error404.html" class="btn btn-primary botonCompra ">Comprar</a>
-                </div>
-            </div>
-            <div class="card cajasTienda" style="width: 18rem;">
-                <img src="../img/pantalonnegro.png" class="card-img-top"
-                    alt="Pantalon largo color negro de River Plate">
-                <div class="card-body">
-                    <h5 class="card-title">Pantalon deportivo</h5>
-                    <a href="../error404.html" class="btn btn-primary botonCompra ">Comprar</a>
-                </div>
-            </div>
-            <div class="card cajasTienda" style="width: 18rem;">
-                <img src="../img/campera.png" class="card-img-top" alt="Campera de River Plate">
-                <div class="card-body">
-                    <h5 class="card-title">Campera de River Plate</h5>
-                    <a href="../error404.html" class="btn btn-primary botonCompra botonCompra ">Comprar</a>
-                </div>
-            </div>
-            <div class="card cajasTienda" style="width: 18rem;">
-                <img src="../img/remeraroja.png" class="card-img-top" alt="Remera de algodon color rojo de River Plate">
-                <div class="card-body">
-                    <h5 class="card-title">Remera estampada River Plate</h5>
-                    <a href="../error404.html" class="btn btn-primary botonCompra ">Comprar</a>
-                </div>
-            </div>
-            <div class="card cajasTienda" style="width: 18rem;">
-                <img src="../img/botines.png" class="card-img-top" alt="Botines de Futbol River Plate">
-                <div class="card-body">
-                    <h5 class="card-title">Botines Pasto Sintetico</h5>
-                    <a href="../error404.html" class="btn btn-primary botonCompra ">Comprar</a>
-                </div>
-            </div>
-            <div class="card cajasTienda" style="width: 18rem;">
-                <img src="../img/zapatillas.png" class="card-img-top" alt="Zapatillas de River Plate">
-                <div class="card-body">
-                    <h5 class="card-title">Zapatillas River Plate</h5>
-                    <a href="../error404.html" class="btn btn-primary botonCompra ">Comprar</a>
-                </div>
-            </div>
-            <div class="card cajasTienda" style="width: 18rem;">
-                <img src="../img/medias.png" class="card-img-top" alt="Medias de jugador de River Plate">
-                <div class="card-body">
-                    <h5 class="card-title">Medias de Futbol</h5>
 
-                    <a href="../error404.html" class="btn btn-primary botonCompra ">Comprar</a>
-                </div>
-            </div>
+        <div class="two columns u-pull-right">
+            <ul>
+                <li class="submenu">
+                    <img src="../img/cart.png" id="img-carrito" width="45">
+                    <p id="cantidad-carrito"> 0 </p>
+                    <div id="carrito">
 
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th> Imagen </th>
+                                    <th> - Nombre </th>
+                                    <th> - Precio </th>
+                                    <th> - Cantidad </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="boton u-full-width">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <div id="lista-productos" class="container">
+            <h1 class=" titulosH">Tienda River Plate</h1>
+
+            <div class="row contenedorCajasTienda justify-content-center flex-wrap">
+
+
+                <div class="card cajasTienda" style="width: 18rem;">
+                    <img src="../img/camisetatitular.png" class="card-img-top imagen-producto u-full-width"
+                        alt="camiseta titular de River Plate">
+                    <div class="card-body cardTienda info-card">
+                        <h5 class="card-title">Camiseta Titular </h5>
+                        <p class="precio"> 35000 $</p>
+                        <a class="btn btn-primary botonCompra u-full-width button input agregar-carrito"
+                            data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+
+
+                <div class="card cajasTienda " style="width: 18rem;">
+                    <img src="../img/camisetasuplente.png" class="card-img-top imagen-producto u-full-width"
+                        alt="camiseta suplente de River Plate">
+                    <div class="card-body cardTienda info-card">
+                        <h5 class="card-title">Camiseta Suplente </h5>
+                        <p class="precio"> 35000 $</p>
+                        <a class="btn btn-primary botonCompra u-full-width button input agregar-carrito"
+                            data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+
+                <div class="card cajasTienda" style="width: 18rem;">
+                    <img src="../img/shortblanco.png" class="card-img-top imagen-producto u-full-width"
+                        alt="Short futbol color blanco de River Plate">
+                    <div class="card-body info-card">
+                        <h5 class="card-title">Short de futbol blanco</h5>
+                        <p class="precio"> 20000 $</p>
+                        <a class="btn btn-primary botonCompra u-full-width button input agregar-carrito"
+                            data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card cajasTienda" style="width: 18rem;">
+                    <img src="../img/shortnegro.png" class="card-img-top imagen-producto u-full-width"
+                        alt="Short fubtol color negro de River Plate">
+                    <div class="card-body info-card">
+                        <h5 class="card-title">Short de futbol negro</h5>
+                        <p class="precio"> 2000 $</p>
+                        <a class="btn btn-primary botonCompra u-full-width button input agregar-carrito"
+                            data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card cajasTienda" style="width: 18rem;">
+                    <img src="../img/pantalonnegro.png" class="card-img-top imagen-producto u-full-width"
+                        alt="Pantalon largo color negro de River Plate">
+                    <div class="card-body info-card">
+                        <h5 class="card-title">Pantalon deportivo</h5>
+                        <p class="precio"> 25000 $</p>
+                        <a class="btn btn-primary botonCompra u-full-width button input agregar-carrito"
+                            data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card cajasTienda" style="width: 18rem;">
+                    <img src="../img/campera.png" class="card-img-top imagen-producto u-full-width"
+                        alt="Campera de River Plate">
+                    <div class="card-body info-card">
+                        <h5 class="card-title">Campera de River Plate</h5>
+                        <p class="precio"> 50000 $</p>
+                        <a class="btn btn-primary botonCompra botonCompra u-full-width button input agregar-carrito"
+                            data-id="6">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card cajasTienda" style="width: 18rem;">
+                    <img src="../img/remeraroja.png" class="card-img-top imagen-producto u-full-width"
+                        alt="Remera de algodon color rojo de River Plate">
+                    <div class="card-body info-card">
+                        <h5 class="card-title">Remera algodon River</h5>
+                        <p class="precio"> 22000 $</p>
+                        <a class="btn btn-primary botonCompra u-full-width button input agregar-carrito"
+                            data-id="7">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card cajasTienda" style="width: 18rem;">
+                    <img src="../img/botines.png" class="card-img-top imagen-producto u-full-width"
+                        alt="Botines de Futbol River Plate">
+                    <div class="card-body info-card">
+                        <h5 class="card-title">Botines Pasto Sintetico</h5>
+                        <p class="precio"> 85000 $</p>
+                        <a class="btn btn-primary botonCompra u-full-width button input agregar-carrito"
+                            data-id="8">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card cajasTienda" style="width: 18rem;">
+                    <img src="../img/zapatillas.png" class="card-img-top imagen-producto u-full-width"
+                        alt="Zapatillas de River Plate">
+                    <div class="card-body info-card">
+                        <h5 class="card-title">Zapatillas River Plate</h5>
+                        <p class="precio"> 45000 $</p>
+                        <a class="btn btn-primary botonCompra u-full-width button input agregar-carrito"
+                            data-id="9">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card cajasTienda" style="width: 18rem;">
+                    <img src="../img/medias.png" class="card-img-top imagen-producto u-full-width"
+                        alt="Medias de jugador de River Plate">
+                    <div class="card-body info-card">
+                        <h5 class="card-title">Medias de Futbol</h5>
+                        <p class="precio"> 9500 $</p>
+                        <a class="btn btn-primary botonCompra u-full-width button input agregar-carrito"
+                            data-id="10">Comprar</a>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
 
     </main>
- 
+
 
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -128,8 +207,8 @@
                     text-body-secondary" target="_blank">Twitter</a></li>
             <li class="nav-item"><a href="https://www.instagram.com/riverplate/"
                     class="nav-link px-2 text-body-secondary" target="_blank">Instagram</a></li>
-            <li class="nav-item"><a href="https://facebook.com/riverplateoficial" class="nav-link px-2 text-body-secondary"
-                    target="_blank">Facebook</a></li>
+            <li class="nav-item"><a href="https://facebook.com/riverplateoficial"
+                    class="nav-link px-2 text-body-secondary" target="_blank">Facebook</a></li>
         </ul>
         <p class="text-center text-body-secondary">&copy; Club Atletico River Plate </p>
     </footer>
