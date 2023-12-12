@@ -1,3 +1,6 @@
+
+//----------------
+
 let articulosCarrito = []
 
 const listaProductos = document.querySelector("#lista-productos");
@@ -8,6 +11,7 @@ const borrarCarrito = document.querySelector("#vaciar-carrito");
 
 const carrito = document.querySelector("#carrito");
 
+const comprarCarritoBtn = document.querySelector("#comprar-carrito")
 
 
 // -------------- funciones ----------
@@ -57,10 +61,10 @@ function limpiarCarrito() {
 
 function dibujarCarrito() {
     limpiarCarrito();
-    
-    let totalItems = 0; 
+
+    let totalItems = 0;
     articulosCarrito.forEach(producto => {
-        
+
         totalItems += producto.cantidad;
         const fila = document.createElement("tr")
         fila.innerHTML = `
@@ -98,12 +102,37 @@ function borrarProducto(evt) {
 
 function sinStorage() {
     localStorage.setItem("carrito", JSON.stringify(articulosCarrito))
+
 }
+
+
+
 //-----
 
 
 
-//----------------------------------- 
+//--------------eventos--------------------- 
+
+comprarCarritoBtn.addEventListener("click", () => {
+    if (articulosCarrito.length === 0) {
+        Swal.fire({
+            icon: "error",
+            title: "El carrito está vacío.",
+            text: "Agrega productos antes de comprar.",
+        });
+
+    } else {
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Compra exitosa. Gracias por tu compra.",
+            showConfirmButton: false,
+            timer: 1500
+        });
+        
+        vaciarCarrito();
+    }
+})
 
 window.addEventListener("DOMContentLoaded", () => {
     articulosCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
@@ -113,6 +142,3 @@ window.addEventListener("DOMContentLoaded", () => {
 carrito.addEventListener("click", borrarProducto);
 listaProductos.addEventListener("click", agregarProducto);
 borrarCarrito.addEventListener("click", vaciarCarrito);
-
-
-
